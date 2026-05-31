@@ -37,17 +37,9 @@ export default function Sidebar({ role, username }: SidebarProps) {
     <aside className="w-64 min-h-screen bg-[#111827] border-r border-white/5 flex flex-col">
       <div className="p-6 border-b border-white/5">
         <div className="flex items-center gap-3">
-        <div className="w-9 h-9 rounded-xl overflow-hidden bg-[#2563EB] flex items-center justify-center flex-shrink-0">
-       <div className="w-9 h-9 rounded-xl overflow-hidden bg-[#2563EB] flex items-center justify-center flex-shrink-0">
-  <Image
-    src="/logo.jpg"
-    alt="Logo"
-    width={36}
-    height={36}
-    className="w-full h-full object-cover"
-  />
-</div>
-        </div>
+          <div className="w-9 h-9 rounded-xl bg-[#2563EB] flex items-center justify-center">
+            <span className="text-white font-bold text-sm">AJ</span>
+          </div>
           <div>
             <p className="text-white font-semibold text-sm">AnzzzJoki</p>
             <p className="text-[#94A3B8] text-xs capitalize">{role.toLowerCase()}</p>
