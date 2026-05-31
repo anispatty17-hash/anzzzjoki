@@ -3,16 +3,10 @@ import { jwtVerify } from "jose";
 
 const COOKIE_NAME = "anzzzjoki_token";
 
-const PUBLIC_PATHS = ["/", "/login", "/public", "/api/auth/login", "/api/public"];
-
 function getSecret() {
   const secret = process.env.JWT_SECRET;
   if (!secret) throw new Error("JWT_SECRET is not defined");
   return new TextEncoder().encode(secret);
-}
-
-function isPublicPath(pathname: string): boolean {
-  return PUBLIC_PATHS.some((p) => pathname === p || pathname.startsWith(p + "/"));
 }
 
 function isProtectedPath(pathname: string): boolean {
@@ -51,9 +45,7 @@ export async function middleware(request: NextRequest) {
     headers.set("x-user-id", payload.userId as string);
     headers.set("x-user-role", payload.role as string);
     headers.set("x-username", payload.username as string);
-
-    const response = NextResponse.next({ request: { headers } });
-    return response;
+    return NextResponse.next({ request: { headers } });
   } catch {
     if (pathname.startsWith("/api/")) {
       return NextResponse.json({ success: false, error: "Unauthorized" }, { status: 401 });
@@ -71,5 +63,7 @@ export const config = {
     "/worker/:path*",
     "/api/orders/:path*",
     "/api/workers/:path*",
+    "/api/admin/:path*",
+    "/api/worker/:path*",
   ],
 };
