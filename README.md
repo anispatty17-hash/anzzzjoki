@@ -61,8 +61,8 @@ Buka `http://localhost:3000`
 
 | Role   | Username   | Password        |
 |--------|------------|-----------------|
-| ADMIN  | anzzzjoki  | shiinamahiru17  |
-| WORKER | worker01   | worker123       |
+| ADMIN  | *********  | *****  |
+| WORKER | ********   | ******       |
 
 **Ganti password setelah login pertama!**
 
