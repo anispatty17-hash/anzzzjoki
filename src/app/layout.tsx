@@ -5,8 +5,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AnzzzJoki — Professional Joki Service",
+  title: "AnzzzJoki - Professional Joki Service",
   description: "Platform manajemen joki profesional",
+  manifest: "/manifest.json",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
