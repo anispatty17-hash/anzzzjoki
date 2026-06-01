@@ -2,8 +2,9 @@
   "name": "AnzzzJoki",
   "short_name": "AnzzzJoki",
   "id": "com.anzzz.joki",
-  "start_url": "/",
   "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
   "background_color": "#070B14",
   "theme_color": "#2563EB",
   "description": "Platform joki profesional",
