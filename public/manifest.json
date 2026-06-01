@@ -2,6 +2,7 @@
   "name": "AnzzzJoki",
   "short_name": "AnzzzJoki",
   "id": "/",
+  "lang": "id-ID",
   "display": "standalone",
   "start_url": "/",
   "scope": "/"
