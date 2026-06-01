@@ -1,7 +1,7 @@
 {
   "name": "AnzzzJoki",
   "short_name": "AnzzzJoki",
-  "id": "https://anzzzjoki.vercel.app",
+  "id": "/",
   "display": "standalone",
   "start_url": "/",
   "scope": "/"
